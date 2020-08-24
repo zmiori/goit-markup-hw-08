@@ -1,0 +1,48 @@
+// /*
+// Палитра текста:
+// цвет основного текста #212121
+// цвет доп текста #757575
+// цвет текста на темных блоках #FFFFFF
+// цвет наведения и акцента #2196F3
+// цвет полупрозрачности в футере rgba(255, 255, 255, 0.6);
+
+// Палитра фона:
+// основной цвет фона  #ffffff
+// цвет фона футера #2F303A
+// допллнительный цвет фона #F5F4FA
+// фон полупрозрачных блоков rgba(47, 48, 58, 0.8);
+// цвет футера #2F303A
+
+// цвет неактивных рамочек: #AFB1B*/
+
+// /* свойства шрифтов
+// font-family: 'Raleway', sans-serif; (лого)
+// font-family: 'Roboto', sans-serif;
+// /* Общие стили */
+
+
+// COLORS
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-color: #2196F3;
+$dark-section-text-color: #ffffff;
+$secondary-dark-section-text-color: rgba(255, 255, 255, 0.6);
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #F5F4FA;
+$opacity-section-color: rgba(47, 48, 58, 0.8);
+$btn-primary-hover-color: #188CE8;
+$social-item-basic-color: #AFB1B8;
+$backdrop-overlay-color: rgba(0, 0, 0, 0.2);
+
+// FONTS
+$base-font-family: "Roboto", sans-serif;
+$base-font-weight: 400px;
+$base-font-size: 14px;
+$base-letter-spacing: 0.03em;
+
+// $logo-font: 
+
+// CONTAINER
+$container-width: 1200px;
+$container-padding-y: 94px;
+$container-padding-x: 15px

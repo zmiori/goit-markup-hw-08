@@ -1,0 +1,15 @@
+.header {
+    
+    .container {
+    @include container-flex($display: flex);
+    @include container-padding($padding-top: 0px, $padding-bottom: 0px)
+}
+
+}
+
+.portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+

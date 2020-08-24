@@ -1,0 +1,24 @@
+.logo {
+    color: $primary-text-color;
+    font-family: "Raleway";
+    @include font-style(700, 26px, 1.19, $base-letter-spacing);
+
+    .nav & {
+        margin-top: 24px;
+        margin-right: 85px;
+        margin-bottom: 25px;
+    }
+}
+
+.logo-web {
+    color: $accent-color;
+}
+
+
+.footer-logo {
+    margin-bottom: 20px;
+    color: $dark-section-text-color;
+    font-family: Raleway;
+    @include font-style(700, 26px, 1.19, $base-letter-spacing);
+    text-transform: none;
+}

@@ -1,0 +1,31 @@
+
+.fields .container {
+    padding-top: 0px;
+}
+
+.fields-list {
+    @include container-flex($justify-content: center);
+}
+
+.fields-list-item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+}
+
+.fields-list-item-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    @include title-text($color: $dark-section-text-color, $font-size: $base-font-size, $line-height: 1.14);
+    background-color: $opacity-section-color;
+    text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+.subscribe-form-wrapper {
+    @include container-flex;
+    margin-top: 20px;
+}
+
+.subscribe {
+    max-width: 570px;
+    flex-grow: 2;
+}
+
+
+.subscribe-email {
+    flex-grow: 2;
+    margin-right: 12px;
+    padding-left: 16px;
+
+    background-color: transparent;
+    color: $dark-section-text-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+.icon-send {
+    margin-left: 10px;
+    fill: #F5F4FA;
+
+}

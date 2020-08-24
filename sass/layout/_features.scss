@@ -1,0 +1,57 @@
+.features-list {
+    @include container-flex;
+}
+
+.features-list-item {
+    width: calc((100% - 90px) / 4);
+
+    &::before {
+        display: block;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    
+        background-color: $secondary-bg-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70px 70px;
+    
+        border-radius: 4px;
+    
+        content: "";
+    }
+
+    &.antenna::before {
+        background-image: url(../images/advantages/antenna.svg);
+    }
+
+    &.clock::before {
+        background-image: url(../images/advantages/clock.svg);
+    }
+
+    &.diagram::before {
+        background-image: url(../images/advantages/diagram.svg);
+    }
+
+    &.astronaut::before {
+        background-image: url(../images/advantages/astronaut.svg);
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.features-list-item-title {
+    margin-bottom: 10px;
+
+    @include title-text($font-size: $base-font-size, $line-height: 1.14, $text-align: left);
+    text-transform: uppercase;
+}
+
+.features-list-item-description {
+    color: $secondary-text-color;
+
+    font-size: $base-font-size;
+    line-height: 1.71;
+}

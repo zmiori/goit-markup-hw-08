@@ -1,0 +1,30 @@
+.footer {
+    color: $dark-section-text-color;
+    background-color: #2F303A;
+
+    @include font-style($font-weight: 700, $font-size: $base-font-size, $line-height: 1.14, $letter-spacing: $base-letter-spacing);
+    text-transform: uppercase;
+}
+
+.container {
+
+    .footer & {
+         @include container-flex(flex, space-between, baseline);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+}
+
+.join-title,
+.signup-title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.join-list {
+    @include container-flex($justify-content: center);
+}
+
+
+

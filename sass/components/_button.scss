@@ -1,0 +1,38 @@
+.btn-primary {
+    margin: 0;
+    padding: 10px 32px 10px;
+
+    color: $dark-section-text-color;
+    background-color: $accent-color;
+
+    @include font-style(700, 16px, 1.87, 0.06em);
+    text-align: center;
+
+    border-radius: 4px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $btn-primary-hover-color;
+        cursor: pointer;
+        outline: none; 
+    }
+
+    &:focus {
+        background-color: $btn-primary-hover-color;
+        cursor: pointer;
+        outline: none; 
+    }
+
+    .subscribe-form-wrapper & {
+        @include container-flex;
+    }
+
+    .application-form & {
+        padding: 10px 55px;
+    }
+}
+
+

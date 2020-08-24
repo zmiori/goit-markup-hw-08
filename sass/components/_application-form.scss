@@ -1,0 +1,251 @@
+
+.application-form {
+    position: relative;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      width: 528px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 40px;
+  
+      background-color: $primary-bg-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+  
+      transform: scale(1);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+  
+  .backdrop.is-hidden .application-form {
+      transform: scale(0.9);
+  }
+  
+  
+  
+  .application-form-title {
+      margin-bottom: 30px;
+  
+      font-size: 20px;
+      line-height: 1.15;
+  }
+  
+  .application-form-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+  
+      display: flex;
+      align-items: center;
+  
+      width: 30px;
+      height: 30px;
+  
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &:hover {
+            outline: none;
+      }
+
+      &:focus {
+        outline: none;
+    }
+  }
+  
+  .icon-close-modal {
+      fill: $primary-text-color;
+  
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .application-form-close:hover & {
+        fill: $accent-color;
+    }
+    
+      .application-form-close:focus & {
+        fill: $accent-color;
+    }
+    
+  }
+  
+  
+  .application-form-input-wrapper {
+      position: relative;
+  
+      margin-bottom: 28px;
+  }
+  
+  .application-form-input,
+  .application-form-comment {
+      width: 448px;
+      height: 40px;
+  
+      font-family: Roboto;
+      font-weight: 400px;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+  
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+  }
+  
+  .application-form-input {
+      padding-left: 42px;
+
+      &::placeholder {
+        opacity: 0;
+    }
+
+    &:not(:placeholder-shown) {
+        outline: none;
+        border-color: $accent-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $accent-color;
+    }
+  }
+  
+  
+  .application-form-input + .application-form-label {
+      position: absolute;
+  
+      top: 12px;
+      left: 42px;
+  
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .icon {
+
+    .application-form-label + & {
+        position: absolute;
+    
+        top: 11px;
+        left: 16px;
+    
+        fill: $primary-text-color;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .application-form-input:focus ~ & {
+        fill: $accent-color;
+    }
+
+    .application-form-input:not(:placeholder-shown) ~ & {
+        fill: $accent-color;
+    } 
+
+  }
+  
+//   .application-form-label + .icon {
+//       position: absolute;
+  
+//       top: 11px;
+//       left: 16px;
+  
+//       fill: $primary-text-color;
+  
+//       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+  
+
+  
+//   .application-form-input:focus ~ .icon, 
+//   .application-form-input:not(:placeholder-shown) ~ .icon {
+//       fill: $accent-color;
+//   }
+  
+  .application-form-input:focus + .application-form-label,
+  .application-form-input:not(:placeholder-shown) + .application-form-label {
+      transform: translate(-28px, -31px);
+      font-size: 12px;
+  
+      color: $accent-color;
+  }
+  
+  .application-form-input:focus.application-form-input::placeholder {
+      opacity: 1;
+  }
+  
+  .application-form-comment {
+      margin-bottom: 20px;
+      height: 120px;
+      padding: 12px 16px;
+  
+      resize: none;
+
+      &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        font-family: $base-font-family;
+        @include font-style(400, 14px, 1.14, 0.01em) 
+    }
+
+  }
+  
+  .application-form-label,
+  .application-form-input::placeholder {
+      font-family: $base-font-family;
+      @include font-style(400, 14px, 1.14, 0.01em)
+  }
+  .agreement-accept {
+      position: relative;
+      @include container-flex($align-items: center);
+      margin-bottom: 30px;
+  }
+  
+  .agreement-accept-text {
+      font-size: $base-font-size;
+      line-height: 1.71;
+      letter-spacing: $base-letter-spacing;
+
+      &::before {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+  
+        background-image: url(../images/checkbox-modal.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px 16px;
+  
+        content: "";
+      }
+  }
+  
+  .agreement-accept-text a {
+      color: $accent-color;
+  }
+  
+  .agreement-accept-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+  
+  
+      .agreement-accept-checkbox:checked + .agreement-accept-text::before {
+          background-color: $accent-color;
+  
+          background-image: url(../images/checked-modal.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 11px 8px;
+  
+          border-radius: 2px;
+      }
+  

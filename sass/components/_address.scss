@@ -1,0 +1,17 @@
+.address-item {
+    font-weight: 400;
+    line-height: 1.71;
+    text-transform: none;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-item-post {
+    color: $dark-section-text-color;
+}
+.address-item-email,
+.address-item-phone {
+  color: rgba(255, 255, 255, 0.6);  
+}

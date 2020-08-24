@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.list,
+.link {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+    text-decoration: none;
+    font-style: unset;
+}
+
+.link,
+.image {
+    display: block;   
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    @include title-text;
+    @include title-bottom;
+}
+
+b {
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    
+    color: $primary-text-color;
+    background-color: $primary-bg-color;
+
+    font-family: $base-font-family;
+    letter-spacing: $base-letter-spacing;
+}

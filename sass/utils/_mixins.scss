@@ -1,0 +1,35 @@
+@mixin title-text($color: $primary-text-color, $font-weight: 700, $font-size: 36px, $line-height: 1.17, $text-align: center) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+}
+
+@mixin title-bottom($margin-bottom: 50px) {
+    margin-bottom: $margin-bottom;
+}
+
+@mixin container-flex($display: flex, $justify-content: flex-start, $align-items: stretch){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin  container-padding($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+@mixin font-style($font-weight, $font-size, $line-height, $letter-spacing) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+    display: $display;
+    position: $pos;
+    content: $content;
+}
