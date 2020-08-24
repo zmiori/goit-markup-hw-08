@@ -1,15 +1,63 @@
 .header {
-    
     .container {
-    @include container-flex($display: flex);
-    @include container-padding($padding-top: 0px, $padding-bottom: 0px)
-}
+        @include container-padding($padding-top: 0px, $padding-bottom: 0px)
+    }
 
 }
 
-.portfolio {
-    border-bottom: 1px solid #ECECEC;
+.logo-menu-wrapper {
+    @include container-flex(flex, space-between, center);
 }
 
+.menu-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+
+}
+
+.icon-close {
+    display: none; 
+
+    .menu-button.is-open & {
+        display: block;
+    }
+
+}
+
+.menu-button.is-open .icon-burger {
+    display: none;
+}
+
+
+.nav-contacts-wrapper {
+
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    
+
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    border-top: 1px solid #ECECEC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// .portfolio {
+//     border-bottom: 1px solid #ECECEC;
+// }
+
+// @include container-flex($display: flex);
 
 

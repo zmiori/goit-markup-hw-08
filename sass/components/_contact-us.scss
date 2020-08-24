@@ -1,7 +1,5 @@
 
 .contact-us {
-    @include container-flex(flex, flex-start, center);
-
     .icon {
         margin-right: 8px;
         fill: $secondary-text-color;
@@ -11,17 +9,17 @@
 }
 
 .contact-us-item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 16px;
 }
 
 .icon.envelope {
-    margin-top: 2px;
+        margin-top: 2px;
 }
 
 .contact-us-email,
 .contact-us-phone {
-    @include container-flex;
-    @include font-style(500, $base-font-size, 1.14, 0.02em);
+    @include container-flex(center);
+    @include font-style(500, 18px, 1.17, 0.02em);
 
     color: $secondary-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,3 +40,39 @@
         fill: $accent-color;
     }
 }
+
+
+// .contact-us {
+//     @include container-flex(flex, flex-start, center);
+
+// }
+
+// .contact-us-item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+
+// .contact-us-email,
+// .contact-us-phone {
+//     @include container-flex;
+//     @include font-style(500, $base-font-size, 1.14, 0.02em);
+
+//     color: $secondary-text-color;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//         color: $accent-color;
+//     }
+
+//     &:focus {
+//         color: $accent-color;
+//     }
+
+//     &:hover .icon {
+//         fill: $accent-color;
+//     }
+
+//     &:focus .icon {
+//         fill: $accent-color;
+//     }
+// }
