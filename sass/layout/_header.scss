@@ -13,8 +13,6 @@
     border: none;
     outline: none;
     background-color: transparent;
-
-
 }
 
 .icon-close {
@@ -23,7 +21,6 @@
     .menu-button.is-open & {
         display: block;
     }
-
 }
 
 .menu-button.is-open .icon-burger {
@@ -33,17 +30,16 @@
 
 .nav-contacts-wrapper {
 
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-    
-
     margin-right: -15px;
     margin-left: -15px;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
 
     border-top: 1px solid #ECECEC;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
