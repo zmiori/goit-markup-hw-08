@@ -12,17 +12,26 @@
 </head>
 <body>
 <!--Шапка Сайта-->
-<header class="header portfolio">
-  <div class="container">
+<header class="header">
+  <div class="container header portfolio">
     <!--Навигация-->
-    <nav class="nav">
-        <a class="logo link" href="./index.html"> <span class="logo-web">Web</span> Studio</a>
-      <ul class="nav-list list">
-        <li class="nav-list-item"><a href="./index.html" class="nav-list-item-link link">Студия</a></li>
-        <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-item-link link current">Портфолио</a></li>
-        <li class="nav-list-item"><a href="" class="nav-list-item-link link">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="logo-menu-wrapper">
+      <a class="logo link" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
+      <button data-menu-button class="menu-button" type="button">
+        <svg class="icon menu" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+          <use class="icon-burger"href="./images/symbol-defs.svg#icon-menu"></use>
+          <use class="icon-close"href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div data-menu class="nav-contacts-wrapper">
+      <nav class="nav">
+        <ul class="nav-list list">
+          <li class="nav-list-item"><a href="./index.html" class="nav-list-item-link link">Студия</a></li>
+          <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-item-link link current">Портфолио</a></li>
+          <li class="nav-list-item"><a href="" class="nav-list-item-link link">Контакты</a></li>
+        </ul>
+      </nav>
     <!--Email & Phone-->
     <ul class="contact-us list">
       <li class="contact-us-item">
@@ -238,5 +247,7 @@
       </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>

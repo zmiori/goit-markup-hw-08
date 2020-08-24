@@ -7,6 +7,10 @@
         margin-top: 16px;
         margin-bottom: 16px;
     }
+
+    @media screen and (min-width: 1200px) {
+        @include font-style(700, 26px, 1.19, $base-letter-spacing);   
+    }
 }
 
 .logo-web {

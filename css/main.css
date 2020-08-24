@@ -84,69 +84,130 @@ body {
 .header .container {
   padding-top: 0px;
   padding-bottom: 0px;
+  position: relative;
 }
 
-.logo-menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .menu-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.icon-close {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
-  display: block;
+@media screen and (max-width: 767px) {
+  .logo-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .icon-close {
+    display: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .menu-button:hover .icon-close {
+    fill: #2196F3;
+  }
+  .menu-button.is-open .icon-burger {
+    display: none;
+  }
+  .menu-button:hover .icon-burger {
+    fill: #2196F3;
+  }
+  .nav-contacts-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    background-color: #ffffff;
+    border-top: 1px solid #ECECEC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .nav-contacts-wrapper.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 }
 
-.menu-button.is-open .icon-burger {
-  display: none;
+@media screen and (min-width: 768px) {
+  .nav-contacts-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }
 
-.nav-contacts-wrapper {
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-  border-top: 1px solid #ECECEC;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+.portfolio {
+  border-bottom: 1px solid #ECECEC;
 }
 
-.nav-contacts-wrapper.is-open {
-  opacity: 1;
-  transform: translateY(0);
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: 60px;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .nav-list-item-link {
+    display: inline-block;
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
-.nav {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-items: center;
+    margin-right: 84px;
+  }
 }
 
-.nav-list-item:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-right: 305px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list-item {
+    position: relative;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav-list-item-link {
-  display: inline-block;
   position: relative;
-  padding-bottom: 8px;
   color: #212121;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -172,6 +233,18 @@ body {
 .nav-list-item-link:hover::after {
   transform: scaleX(1);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list-item-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 .current {
@@ -205,6 +278,15 @@ body {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+
 .logo-web {
   color: #2196F3;
 }
@@ -228,6 +310,12 @@ body {
 
 .contact-us-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .icon.envelope {
@@ -265,6 +353,38 @@ body {
 .contact-us-email:focus .icon,
 .contact-us-phone:focus .icon {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-email,
+  .contact-us-phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0px;
+  }
+  .contact-us .contact-us-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
 }
 
 .hero {
