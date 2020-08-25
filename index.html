@@ -59,18 +59,18 @@
     <!--Уникальный Контент страницы-->
     <main class="main">
       <!--Hero Section-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
-          <div class="test"><h1 class="hero-title">Эффективные решения для вашего бизнеса</h1></div>
+          <div class="title-wrapper"><h1 class="hero-title">Эффективные решения для вашего бизнеса</h1></div>
         <button data-modal-open class="btn-primary">Заказать услугу</button>
       </div>
-      </section> -->
+      </section>
       <!--Конец Hero Section-->
 
       <!--Секция Наши Преимущества-->
-      <!-- <section class="features"> -->
-        <!--<h2>Наши преимущества</h2>-->
-        <!-- <ul class="features-list list container">
+      <section class="features">
+        <!-- <h2>Наши преимущества</h2> -->
+        <ul class="features-list list container">
           <li class="features-list-item antenna">
             <div class="features-list-item-title"><h3>Внимание к деталям</h3></div>
             <p class="features-list-item-description">
@@ -99,40 +99,84 @@
             </p>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!--Конец Секции Наши Преимущества-->
 
       <!--Секция Чем мы занимаемся-->
-      <!-- <section class="fields">
+      <section class="fields">
         <div class="container">
           <div class="fields-title"><h2>Чем мы занимаемся</h2></div>
         <ul class="fields-list list">
           <li class="fields-list-item">
-            <img class="fields-list-item-image image" src="./images/what-we-do/laptop.jpg" alt="Ноутбук" width="370" height="294">
+            <picture>
+              <source
+                srcset="./images/what-we-do/desktop-app.webp 1x, ./images/what-we-do/desktop-app@2x.webp 2x, ./images/what-we-do/desktop-app@3x.webp 3x"
+                type="image/webp">
+              <img class="fields-list-item-image image"
+                srcset="./images/what-we-do/desktop-app.jpg 1x, ./images/what-we-do/desktop-app@2x.jpg 2x, ./images/what-we-do/desktop-app@3x.jpg 3x"
+                src="./image/what-we-do/desktop-app.jpg"
+                alt="Планшет и клавиатура"
+                width="370" height="294">
+            </picture>
             <h3 class="fields-list-item-title">Десктопные приложения</h3>
           </li>
           <li class="fields-list-item">
-            <img class="fields-list-item-image image" src="./images/what-we-do/smartphone.jpg" alt="Мобильный телефон" width="370" height="294">
+            <picture>
+              <source
+                srcset="./images/what-we-do/mobile-app.webp 1x, ./images/what-we-do/mobile-app@2x.webp 2x, ./images/what-we-do/mobile-app@3x.webp 3x"
+                type="image/webp">
+              <img class="fields-list-item-image image"
+                srcset="./images/what-we-do/mobile-app.jpg 1x, ./images/what-we-do/mobile-app@2x.jpg 2x, ./images/what-we-do/mobile-app@3x.jpg 3x"
+                src="./image/what-we-do/mobile-app.jpg"
+                alt="Мобильный телефон"
+                width="370" height="294">
+            </picture>
             <h3 class="fields-list-item-title">Мобильные приложения</h3>
           </li>
           <li class="fields-list-item">
-            <img class="fields-list-item-image image" src="./images/what-we-do/computer-monitor.jpg" alt="Монитор компьютера" width="370" height="294" >
+            <picture>
+              <source
+                srcset="./images/what-we-do/tablet-design.webp 1x, ./images/what-we-do/tablet-design@2x.webp 2x, ./images/what-we-do/tablet-design@3x.webp 3x"
+                type="image/webp">
+              <img class="fields-list-item-image image"
+                srcset="./images/what-we-do/tablet-design.jpg 1x, ./images/what-we-do/tablet-design@2x.jpg 2x, ./images/what-we-do/tablet-design@3x.jpg 3x"
+                src="./image/what-we-do/tablet-design.jpg"
+                alt="Планшет и клавиатура"
+                width="370" height="294">
+            </picture>
             <h3 class="fields-list-item-title">Дизайнерские решения</h3>
           </li>
         </ul>
         </div>
-      </section> -->
+      </section>
       <!--Конец секции Чем мы занимаемся-->
 
       <!--Секция Наша команда-->
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
-          <ul class="our-team-list list"> -->
-            <!--Николай Кучеренко-->
-            <!-- <li class="our-team-list-item">
-              <img  class="our-team-list-item-photo image" src="./images/our-team-photos/nikolay-kucherenko.jpg" alt="фото Николая Кучеренко" width="270" height="260">
-              <h3 class="worker-name">Николай Кучеренко</h3>
+          <ul class="our-team-list list">
+            <!--Игорь Демьяненко-->
+            <li class="our-team-list-item">
+              <picture>
+                <source 
+                srcset="./images/our-team-photos/mobile/demianenko.webp 1x, ./images/our-team-photos/mobile/demianenko@2x.webp 2x, ./images/our-team-photos/mobile/demianenko@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 767px)">
+                <source 
+                srcset="./images/our-team-photos/tablet/demianenko.webp 1x, ./images/our-team-photos/tablet/demianenko@2x.webp 2x, ./images/our-team-photos/tablet/demianenko@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 1199px)">
+                <source 
+                srcset="./images/our-team-photos/desktop/demianenko.webp 1x, ./images/our-team-photos/desktop/demianenko@2x.webp 2x, ./images/our-team-photos/desktop/demianenko@3x.webp 3x" 
+                type="image/webp"
+                media="(min-width: 1200px)">
+                <img class="our-team-list-item-photo image"
+                srcset="./images/our-team-photos/mobile/demianenko.jpg 1x, ./images/our-team-photos/mobile/demianenko@2x.jpg 2x, ./images/our-team-photos/mobile/demianenko@3x.jpg 3x"
+                src="./images/our-team-photos/mobile/demianenko.jpg"
+                alt="фото Игоря Демьяненко">
+              </picture>
+              <h3 class="worker-name">Игорь Демьяненко</h3>
               <p class="position"  lang="en">Product Designer</p>
               <ul class="social list">
                 <li class="social-item">
@@ -164,14 +208,28 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
-            <!--Ольга Иванова-->
-            <!-- <li class="our-team-list-item">
-              <img  class="our-team-list-item-photo image"
-                src="./images/our-team-photos/olga-ivanova.jpg"
-                alt="фото Ольги Ивановой"
-                width="270" height="260">
-              <h3 class="worker-name">Ольга Иванова</h3>
+            </li>
+            <!--Ольга Репина-->
+            <li class="our-team-list-item">
+              <picture>
+                <source 
+                srcset="./images/our-team-photos/mobile/repina.webp 1x, ./images/our-team-photos/mobile/repina@2x.webp 2x, ./images/our-team-photos/mobile/repina@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 767px)">
+                <source 
+                srcset="./images/our-team-photos/tablet/repina.webp 1x, ./images/our-team-photos/tablet/repina@2x.webp 2x, ./images/our-team-photos/tabletrepinao@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 1199px)">
+                <source 
+                srcset="./images/our-team-photos/desktop/repina.webp 1x, ./images/our-team-photos/desktop/repina@2x.webp 2x, ./images/our-team-photos/desktop/repina@3x.webp 3x" 
+                type="image/webp"
+                media="(min-width: 1200px)">
+                <img class="our-team-list-item-photo image"
+                srcset="./images/our-team-photos/mobile/repina.jpg 1x, ./images/our-team-photos/mobile/repina@2x.jpg 2x, ./images/our-team-photos/mobile/repina@3x.jpg 3x"
+                src="./images/our-team-photos/mobile/repina.jpg"
+                alt="фото Ольги Репиной">
+              </picture>
+              <h3 class="worker-name">Ольга Репина</h3>
               <p class="position" lang="en">Frontend Developer</p>
               <ul class="social list">
                 <li class="social-item">
@@ -203,14 +261,27 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
-            <!--Андрей Шевченко-->
-            <!-- <li class="our-team-list-item">
-              <img class="our-team-list-item-photo image"
-                src="./images/our-team-photos/andrii-shevchenko.jpg"
-                alt="фото Андрея Шевченко"
-                width="270" height="260">
-              <h3 class="worker-name">Андрей Шевченко</h3>
+            </li>
+            <!--Николай Тарасов-->
+            <li class="our-team-list-item">
+              <picture>
+                <source 
+                srcset="./images/our-team-photos/mobile/tarasov.webp 1x, ./images/our-team-photos/mobile/tarasov@2x.webp 2x, ./images/our-team-photos/mobile/tarasov@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 767px)">
+                <source 
+                srcset="./images/our-team-photos/tablet/tarasov.webp 1x, ./images/our-team-photos/tablet/tarasov@2x.webp 2x, ./images/our-team-photos/tablet/tarasov@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 1199px)">
+                <source 
+                srcset="./images/our-team-photos/desktop/tarasov.webp 1x, ./images/our-team-photos/desktop/tarasov@2x.webp 2x, ./images/our-team-photos/desktop/tarasov@3x.webp 3x" 
+                type="image/webp"
+                media="(min-width: 1200px)">
+                <img class="our-team-list-item-photo image"
+                srcset="./images/our-team-photos/mobile/tarasov.jpg 1x, ./images/our-team-photos/mobile/tarasov@2x.jpg 2x, ./images/our-team-photos/mobile/tarasov@3x.jpg 3x"
+                src="./images/our-team-photos/mobile/tarasov.jpg"
+                alt="фото Николая Тарасова">
+              <h3 class="worker-name">Николай Тарасов</h3>
               <p class="position" lang="en">Marketing</p>
               <ul class="social list">
                 <li class="social-item">
@@ -242,14 +313,28 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
-            <!--Иван Николаев-->
-            <!-- <li class="our-team-list-item">
-              <img class="our-team-list-item-photo image"
-                src="./images/our-team-photos/ivan-nikolaev.jpg"
-                alt="фото Ивана Николаева"
-                width="270" height="260">
-              <h3 class="worker-name">Иван Николаев</h3>
+            </li>
+            <!--Михаил Ермаков-->
+            <li class="our-team-list-item">
+              <picture>
+                <source 
+                srcset="./images/our-team-photos/mobile/iermakov.webp 1x, ./images/our-team-photos/mobile/iermakov@2x.webp 2x, ./images/our-team-photos/mobile/iermakov@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 767px)">
+                <source 
+                srcset="./images/our-team-photos/tablet/iermakov.webp 1x, ./images/our-team-photos/tablet/iermakov@2x.webp 2x, ./images/our-team-photos/tablet/iermakov@3x.webp 3x" 
+                type="image/webp"
+                media="(max-width: 1199px)">
+                <source 
+                srcset="./images/our-team-photos/desktop/iermakov.webp 1x, ./images/our-team-photos/desktop/iermakov@2x.webp 2x, ./images/our-team-photos/desktop/iermakov@3x.webp 3x" 
+                type="image/webp"
+                media="(min-width: 1200px)">
+                <img class="our-team-list-item-photo image"
+                srcset="./images/our-team-photos/mobile/iermakov.jpg 1x, ./images/our-team-photos/mobile/iermakov@2x.jpg 2x, ./images/our-team-photos/mobile/iermakov@3x.jpg 3x"
+                src="./images/our-team-photos/mobile/iermakov.jpg"
+                alt="фото Михаила Ермакова">
+              </picture>
+              <h3 class="worker-name">Михаил Ермаков</h3>
               <p class="position" lang="en">UI Designer</p>
               <ul class="social list">
                 <li class="social-item">
@@ -284,7 +369,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Конец секции Наша команда-->
 
       <!--Секция Постоянные клиенты-->

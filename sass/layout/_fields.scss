@@ -1,3 +1,8 @@
+@media screen and (max-width: 1199px) {
+    .fields {
+        display: none;
+    }
+}
 
 .fields .container {
     padding-top: 0px;
@@ -26,6 +31,6 @@
     padding-bottom: 27px;
 
     @include title-text($color: $dark-section-text-color, $font-size: $base-font-size, $line-height: 1.14);
-    background-color: $opacity-section-color;
+    background-color: rgba(47, 48, 58, 0.8);;
     text-transform: uppercase;
 }
