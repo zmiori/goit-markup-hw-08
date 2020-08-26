@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2 {
     @include title-text;
     @include title-bottom;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
 b {

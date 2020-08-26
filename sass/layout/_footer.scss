@@ -7,24 +7,51 @@
 }
 
 .container {
-
     .footer & {
-         @include container-flex(flex, space-between, baseline);
     padding-top: 60px;
     padding-bottom: 60px;
     }
-
 }
 
 .join-title,
-.signup-title {
+.subscribe-title {
     display: block;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .join-list {
     @include container-flex($justify-content: center);
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        @include container-flex($justify-content: flex-start);
+        margin-bottom: 0px;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .container.footer {
+        @include container-flex(flex, space-between, baseline);
+        flex-wrap: wrap;
+    }
+
+    .footer-item-wrapper,
+    .join {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container.footer {
+        flex-wrap: nowrap;
+    }
+}
+
+
 
 
 

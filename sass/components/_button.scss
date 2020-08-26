@@ -26,9 +26,10 @@
         outline: none; 
     }
 
-    // .subscribe-form-wrapper & {
-    //     @include container-flex;
-    // }
+    .subscribe-form-wrapper & {
+        @include container-flex;
+        align-items: center;
+    }
 
     // .application-form & {
     //     padding: 10px 55px;

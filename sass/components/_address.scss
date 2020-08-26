@@ -1,11 +1,22 @@
+.address {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
+}
+
 .address-item {
     font-weight: 400;
     line-height: 1.71;
     text-transform: none;
-}
 
-.address-item:not(:last-child) {
-    margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
 }
 
 .address-item-post {

@@ -1,4 +1,4 @@
-@mixin title-text($color: $primary-text-color, $font-weight: 700, $font-size: 36px, $line-height: 1.17, $text-align: center) {
+@mixin title-text($color: $primary-text-color, $font-weight: 700, $font-size: 28px, $line-height: 1.17, $text-align: center) {
     color: $color;
     font-weight: $font-weight;
     font-size: $font-size;

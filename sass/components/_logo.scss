@@ -24,4 +24,8 @@
     font-family: Raleway;
     @include font-style(700, 24px, 1.17, $base-letter-spacing);
     text-transform: none;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
