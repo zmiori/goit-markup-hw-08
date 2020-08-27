@@ -504,6 +504,7 @@ body {
 .btn-primary {
   margin: 0;
   padding: 10px 32px 10px;
+  max-width: 100%;
   color: #ffffff;
   background-color: #2196F3;
   font-weight: 700;
@@ -1426,8 +1427,8 @@ body {
 }
 
 .gallery-image-thumb {
-  width: 450px;
-  height: 294px;
+  max-width: 450px;
+  max-height: 294px;
 }
 
 .gallery-image-thumb .image {

@@ -88,8 +88,8 @@
 }
 
 .gallery-image-thumb {
-    width: 450px;
-    height: 294px;
+    max-width: 450px;
+    max-height: 294px;
 
     .image {
         display: block;
